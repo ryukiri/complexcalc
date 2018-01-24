@@ -13,4 +13,12 @@ class Calculator {
     public func add(lhs: Int, rhs: Int) -> Int {
         return lhs + rhs
     }
+    
+    func add(_ args: [Int]) -> Int{
+        var sum = 0
+        for i in args {
+            sum += i
+        }
+        return sum
+    }
 }
