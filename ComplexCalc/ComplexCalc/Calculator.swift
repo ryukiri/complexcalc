@@ -39,4 +39,11 @@ class Calculator {
     public func subtract(lhs: Int, rhs: Int) -> Int {
         return lhs - rhs
     }
+    
+    func subtract(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
+        var ans : (Int, Int) = (0, 0)
+        ans.0 = lhs.0 - rhs.0
+        ans.1 = lhs.1 - rhs.1
+        return ans
+    }
 }
