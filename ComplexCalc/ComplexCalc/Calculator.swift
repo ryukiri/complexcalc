@@ -69,4 +69,9 @@ class Calculator {
         }
         return total
     }
+    
+    func avg(_ args: [Int]) -> Int{
+        let sum = add(args)
+        return sum / (args.endIndex-1)
+    }
 }
