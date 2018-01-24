@@ -35,4 +35,8 @@ class Calculator {
         sum["y"]! = lhs["y"]! + rhs["y"]!
         return sum
     }
+    
+    public func subtract(lhs: Int, rhs: Int) -> Int {
+        return lhs - rhs
+    }
 }
