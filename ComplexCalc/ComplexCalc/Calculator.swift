@@ -62,4 +62,11 @@ class Calculator {
         return lhs * rhs
     }
 
+    func multiply(_ args : [Int]) -> Int{
+        var total = 1;
+        for i in args {
+            total *= i
+        }
+        return total
+    }
 }
