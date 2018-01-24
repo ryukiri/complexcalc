@@ -72,12 +72,11 @@ class Calculator {
     
     func avg(_ args: [Int]) -> Int{
         let sum = add(args)
-        return sum / (args.endIndex-1)
+        return sum / (args.endIndex)
     }
     
     func count(_ args: [Int]) -> Int{
-        print(args.endIndex)
-        return args.endIndex-1
+        return args.endIndex
     }
     
     func mathOp(lhs : Int, rhs : Int, op : (Int, Int) -> Int) -> Int {
@@ -85,9 +84,9 @@ class Calculator {
     }
     
     func mathOp(args : [Int], beg : Int, op : (Int, Int) -> Int) -> Int {
-        var ans = 0;
-        for i in 0...args.count-1 {
-            ans = ans + i
+        var ans = beg;
+        for i in args {
+            ans = op(ans, args[i-1])
         }
         return ans
     }
