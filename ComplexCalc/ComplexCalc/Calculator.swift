@@ -46,4 +46,11 @@ class Calculator {
         ans.1 = lhs.1 - rhs.1
         return ans
     }
+    
+    func subtract(lhs: [String : Int], rhs: [String : Int]) -> [String : Int] {
+        var ans : [String : Int] = ["x": 0, "y": 0]
+        ans["x"]! = lhs["x"]! - rhs["x"]!
+        ans["y"]! = lhs["y"]! - rhs["y"]!
+        return ans
+    }
 }
