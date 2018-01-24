@@ -74,4 +74,9 @@ class Calculator {
         let sum = add(args)
         return sum / (args.endIndex-1)
     }
+    
+    func count(_ args: [Int]) -> Int{
+        print(args.endIndex)
+        return args.endIndex-1
+    }
 }
