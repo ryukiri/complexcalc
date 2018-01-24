@@ -28,4 +28,11 @@ class Calculator {
         sum.1 = lhs.1 + rhs.1
         return sum
     }
+    
+    func add(lhs: [String : Int], rhs: [String : Int]) -> [String : Int] {
+        var sum : [String : Int] = ["x": 0, "y": 0]
+        sum["x"]! = lhs["x"]! + rhs["x"]!
+        sum["y"]! = lhs["y"]! + rhs["y"]!
+        return sum
+    }
 }
