@@ -79,4 +79,16 @@ class Calculator {
         print(args.endIndex)
         return args.endIndex-1
     }
+    
+    func mathOp(lhs : Int, rhs : Int, op : (Int, Int) -> Int) -> Int {
+        return op(lhs, rhs)
+    }
+    
+    func mathOp(args : [Int], beg : Int, op : (Int, Int) -> Int) -> Int {
+        var ans = 0;
+        for i in 0...args.count-1 {
+            ans = ans + i
+        }
+        return ans
+    }
 }
