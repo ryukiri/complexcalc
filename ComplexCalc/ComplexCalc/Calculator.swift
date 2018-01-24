@@ -21,4 +21,11 @@ class Calculator {
         }
         return sum
     }
+    
+    func add(lhs : (Int, Int), rhs : (Int, Int)) -> (Int, Int) {
+        var sum : (Int, Int) = (0, 0)
+        sum.0 = lhs.0 + rhs.0
+        sum.1 = lhs.1 + rhs.1
+        return sum
+    }
 }
