@@ -53,4 +53,8 @@ class Calculator {
         ans["y"]! = lhs["y"]! - rhs["y"]!
         return ans
     }
+    
+    public func divide(lhs: Int, rhs: Int) -> Int {
+        return lhs / rhs
+    }
 }
