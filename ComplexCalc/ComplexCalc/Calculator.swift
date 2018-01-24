@@ -10,4 +10,7 @@ import Foundation
 
 // All your work will go in here
 class Calculator {
+    public func add(lhs: Int, rhs: Int) -> Int {
+        return lhs + rhs
+    }
 }
